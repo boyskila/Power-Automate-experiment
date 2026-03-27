@@ -23,7 +23,7 @@ The system works as an event-driven automation pipeline.
 
 Email → Trigger → AI Processing → Formatting → Teams Message
 
-<img src="pipeline.png" alt="" style="display: inline-block; height: 1.25rem; width: auto; vertical-align: text-bottom; margin: 0 0.25rem;" />
+<img src="pipeline.png" alt="" style="display: inline-block; height: 400px; width: auto; vertical-align: text-bottom; margin: 0 0.25rem;" />
 
 ## Step 1 - Outlook trigger
 
@@ -64,7 +64,7 @@ No complex parsing is required because the prompt already returns a ready-to-sen
 
 The flow sends a message to Teams
 
-<img src="teams-message.png" alt="" style="display: inline-block; height: 1.25rem; width: auto; vertical-align: text-bottom; margin: 0 0.25rem;" />
+<img src="teams-message.png" alt="" style="display: inline-block; height: 400px; width: auto; vertical-align: text-bottom; margin: 0 0.25rem;" />
 
 ---
 
