@@ -5,9 +5,10 @@ The main driver for this experiment was a simple, real-life problem: important e
 Email is passive and easy to ignore, while Microsoft Teams is active, visible, and attention-grabbing. Teams notifications appear directly on screen, making them a much more effective channel for timely awareness and action.
 
 The idea was to transform important emails into engaging, personalized Teams messages that immediately communicate:
-   • why the email matters
-   • what needs to be done
-   • what the key takeaways are
+
+   - why the email matters
+   - what needs to be done
+   - what the key takeaways are
 
 ---
 
@@ -35,8 +36,9 @@ The flow automatically starts whenever a new email is received in Outlook.
 
 Emails arrive in HTML format, which is noisy for AI.
 So the flow includes a preprocessing step:
-   • Convert HTML → Plain text
-   • Remove signatures or extra formatting (optional cleanup)
+
+   - Convert HTML → Plain text
+   - Remove signatures or extra formatting (optional cleanup)
 
 ---
 
@@ -83,10 +85,11 @@ From the email body, extract exactly three things:
 
 1. **Summary** – A concise 1-2 sentence summary of the email.
 2. **Intent** – Classify the email into exactly ONE of these categories:
-   • action_required – The sender needs the recipient to do something specific.
-   • request – The sender is asking for information or a favour.
-   • approval – The sender is seeking sign-off or permission.
-   • fyi – Informational only, no action needed.
+
+   - action_required – The sender needs the recipient to do something specific.
+   - request – The sender is asking for information or a favour.
+   - approval – The sender is seeking sign-off or permission.
+   - fyi – Informational only, no action needed.
 3. **Extracted Tasks** – A list of concrete, actionable to-do items from the email. If there are none, return an empty list.
 
 #### STEP 3 – FORMAT THE OUTPUT
